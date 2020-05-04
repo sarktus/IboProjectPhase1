@@ -7,3 +7,12 @@ C:\Users\cognizantdotnet28\source\repos\BusinessStandard\BusinessStandard.Domain
 C:\Users\cognizantdotnet28\source\repos\BusinessStandard\BusinessStandard.Domain\obj\Debug\netcoreapp3.1\BusinessStandard.Domain.AssemblyInfo.cs
 C:\Users\cognizantdotnet28\source\repos\BusinessStandard\BusinessStandard.Domain\obj\Debug\netcoreapp3.1\BusinessStandard.Domain.dll
 C:\Users\cognizantdotnet28\source\repos\BusinessStandard\BusinessStandard.Domain\obj\Debug\netcoreapp3.1\BusinessStandard.Domain.pdb
+D:\Project\BusinessStandard\BusinessStandard.Domain\bin\Debug\netcoreapp3.1\BusinessStandard.Domain.deps.json
+D:\Project\BusinessStandard\BusinessStandard.Domain\bin\Debug\netcoreapp3.1\BusinessStandard.Domain.dll
+D:\Project\BusinessStandard\BusinessStandard.Domain\bin\Debug\netcoreapp3.1\BusinessStandard.Domain.pdb
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Debug\netcoreapp3.1\BusinessStandard.Domain.csproj.CoreCompileInputs.cache
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Debug\netcoreapp3.1\BusinessStandard.Domain.AssemblyInfoInputs.cache
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Debug\netcoreapp3.1\BusinessStandard.Domain.AssemblyInfo.cs
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Debug\netcoreapp3.1\BusinessStandard.Domain.dll
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Debug\netcoreapp3.1\BusinessStandard.Domain.pdb
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Debug\netcoreapp3.1\BusinessStandard.Domain.csprojAssemblyReference.cache

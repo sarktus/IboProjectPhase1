@@ -9,9 +9,14 @@ namespace BusinessStandard.Domain.Models
     {
 
         [Key]
-        public int Std_ID { get; set; }
-        public String Name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
         public int age { get; set; }
-        public String Address { get; set; }
+        public string Address { get; set; }
+        public string Degree { get; set; }
+        public string DOB { get; set; }
+        public string Gender { get; set; }
+        public string CitizenshipCountries { get; set; }
+        public string SpokenLanguages { get; set; }
     }
 }

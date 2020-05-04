@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using BusinessStandard.Data;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace BusinessStandard.Api
 {
@@ -30,6 +31,20 @@ namespace BusinessStandard.Api
             // Add framework services.  
             services.AddDbContext<BusinessServiceDbContext>(opts => opts.UseSqlServer(Configuration["Data:ConnectionStrings:DefaultConnection"]));
             services.AddMvc();
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Version = "v1",
+                    Title = "My First API",
+                    Description = "My First ASP.NET Core 2.0 Web API",
+                    TermsOfService = "None",
+                    Contact = new Contact()
+                    {
+                        Name = "Tushar Sarkar",
+                        Email = "tstusharsarkar18@gmail.com",
+                    }
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +64,10 @@ namespace BusinessStandard.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
         }
     }

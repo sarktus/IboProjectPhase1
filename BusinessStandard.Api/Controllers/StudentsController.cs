@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BusinessStandard.Data;
 using BusinessStandard.Domain.Models;
-using BusinessStandard.Services;
 
 namespace BusinessStandard.Api.Controllers
 {
@@ -16,27 +15,24 @@ namespace BusinessStandard.Api.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly BusinessServiceDbContext _context;
-        private StudentService _studentService;
 
         public StudentsController(BusinessServiceDbContext context)
         {
-            //_context = context;
-            _studentService = new StudentService(context);
+            _context = context;
         }
 
         // GET: api/Students
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Students>>> GetStudents()
         {
-            //return await _context.Students.ToListAsync();
-            return await _studentService.GetStudents();
+            return await _context.Students.ToListAsync();
         }
 
         // GET: api/Students/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Students>> GetStudents(int id)
         {
-            var students = await _studentService.GetStudents(id);
+            var students = await _context.Students.FindAsync(id);
 
             if (students == null)
             {
@@ -48,60 +44,47 @@ namespace BusinessStandard.Api.Controllers
 
         // PUT: api/Students/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        
+        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutStudents(int id,[FromBody] Students students)
+        public async Task<IActionResult> PutStudents(int id, Students students)
         {
-            students.Std_ID = id;
-            int rStatus = 0;
-            if (id != students.Std_ID)
+            students.Id = id;
+            if (id != students.Id)
             {
                 return BadRequest();
             }
-            else
-            {
-              rStatus =  _studentService.PutStudents(id, students);
-            }
-            //_context.Entry(students).State = EntityState.Modified;
 
-            //try
-            //{
-            //    //await _context.SaveChangesAsync();
-            //}
-            //catch (DbUpdateConcurrencyException)
-            //{
-            //    if (!StudentsExists(id))
-            //    {
-            //        return NotFound();
-            //    }
-            //    else
-            //    {
-            //        throw;
-            //    }
-            //}
+            _context.Entry(students).State = EntityState.Modified;
 
-            if (rStatus == 0)
+            try
             {
-                
-                return NotFound();
+                await _context.SaveChangesAsync();
             }
-            else
+            catch (DbUpdateConcurrencyException)
             {
-                return NoContent();
+                if (!StudentsExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
             }
-            
+
+            return NoContent();
         }
 
         // POST: api/Students
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        
+        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
         public async Task<ActionResult<Students>> PostStudents(Students students)
         {
             _context.Students.Add(students);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetStudents", new { id = students.Std_ID }, students);
+            return CreatedAtAction("GetStudents", new { id = students.Id }, students);
         }
 
         // DELETE: api/Students/5
@@ -120,9 +103,9 @@ namespace BusinessStandard.Api.Controllers
             return students;
         }
 
-        //private bool StudentsExists(int id)
-        //{
-        //    return _context.Students.Any(e => e.Std_ID == id);
-        //}
+        private bool StudentsExists(int id)
+        {
+            return _context.Students.Any(e => e.Id == id);
+        }
     }
 }
