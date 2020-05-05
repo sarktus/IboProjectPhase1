@@ -18,5 +18,6 @@ namespace BusinessStandard.Domain.Models
         public string Gender { get; set; }
         public string CitizenshipCountries { get; set; }
         public string SpokenLanguages { get; set; }
+        public int SchoolId { get; set; }
     }
 }

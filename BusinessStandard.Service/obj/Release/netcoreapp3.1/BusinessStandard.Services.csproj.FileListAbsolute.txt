@@ -1,0 +1,14 @@
+D:\Project\BusinessStandard\BusinessStandard.Service\bin\Release\netcoreapp3.1\BusinessStandard.Services.deps.json
+D:\Project\BusinessStandard\BusinessStandard.Service\bin\Release\netcoreapp3.1\BusinessStandard.Services.dll
+D:\Project\BusinessStandard\BusinessStandard.Service\bin\Release\netcoreapp3.1\BusinessStandard.Services.pdb
+D:\Project\BusinessStandard\BusinessStandard.Service\bin\Release\netcoreapp3.1\BusinessStandard.Data.dll
+D:\Project\BusinessStandard\BusinessStandard.Service\bin\Release\netcoreapp3.1\BusinessStandard.Domain.dll
+D:\Project\BusinessStandard\BusinessStandard.Service\bin\Release\netcoreapp3.1\BusinessStandard.Data.pdb
+D:\Project\BusinessStandard\BusinessStandard.Service\bin\Release\netcoreapp3.1\BusinessStandard.Domain.pdb
+D:\Project\BusinessStandard\BusinessStandard.Service\obj\Release\netcoreapp3.1\BusinessStandard.Services.csprojAssemblyReference.cache
+D:\Project\BusinessStandard\BusinessStandard.Service\obj\Release\netcoreapp3.1\BusinessStandard.Services.csproj.CoreCompileInputs.cache
+D:\Project\BusinessStandard\BusinessStandard.Service\obj\Release\netcoreapp3.1\BusinessStandard.Services.AssemblyInfoInputs.cache
+D:\Project\BusinessStandard\BusinessStandard.Service\obj\Release\netcoreapp3.1\BusinessStandard.Services.AssemblyInfo.cs
+D:\Project\BusinessStandard\BusinessStandard.Service\obj\Release\netcoreapp3.1\BusinessStandard.Services.csproj.CopyComplete
+D:\Project\BusinessStandard\BusinessStandard.Service\obj\Release\netcoreapp3.1\BusinessStandard.Services.dll
+D:\Project\BusinessStandard\BusinessStandard.Service\obj\Release\netcoreapp3.1\BusinessStandard.Services.pdb

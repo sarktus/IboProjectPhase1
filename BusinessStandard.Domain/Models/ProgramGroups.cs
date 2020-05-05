@@ -9,9 +9,9 @@ namespace BusinessStandard.Domain.Models
     {
         [Key]
         public int BoardID { get; set; }
-        public int Science { get; set; }
-        public int Commerce { get; set; }
-        public int Literature { get; set; }
-        public int Humanities { get; set; }
+        public string Science { get; set; }
+        public string Commerce { get; set; }
+        public string Literature { get; set; }
+        public string Humanities { get; set; }
     }
 }

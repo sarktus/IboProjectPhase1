@@ -10,10 +10,10 @@ namespace BusinessStandard.Domain.Models
         [Key]
         public int SchoolId { get; set; }
 
-        public int Name { get; set; }
+        public string Name { get; set; }
 
-        public int Country { get; set; }
+        public string Country { get; set; }
 
-        public int DefaultLangOfComm { get; set; }
+        public string DefaultLangOfComm { get; set; }
     }
 }

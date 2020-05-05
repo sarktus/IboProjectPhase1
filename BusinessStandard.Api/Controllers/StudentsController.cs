@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BusinessStandard.Data;
 using BusinessStandard.Domain.Models;
+using BusinessStandard.Domain.Models.ViewModel;
 
 namespace BusinessStandard.Api.Controllers
 {
@@ -27,6 +28,24 @@ namespace BusinessStandard.Api.Controllers
         {
             return await _context.Students.ToListAsync();
         }
+
+        [HttpGet]
+        [Route("GetAllStudents")]
+        public async Task<ActionResult<IEnumerable<StudentViewModel>>> GetAllStudents()
+        {
+            var result = from std in _context.Students
+                         join cat in _context.Schools on std.SchoolId equals cat.SchoolId
+
+                         select new StudentViewModel()
+                         {
+                             Id = std.Id,
+                             Name = std.Name,
+                             SchoolName = cat.Name
+
+                         };
+            return await result.ToListAsync();
+        }
+
 
         // GET: api/Students/5
         [HttpGet("{id}")]

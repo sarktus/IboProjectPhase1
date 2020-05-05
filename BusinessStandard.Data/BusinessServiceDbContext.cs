@@ -16,7 +16,6 @@ namespace BusinessStandard.Data
         }
 
         public DbSet<Students> Students { get; set; }
-        public DbSet<Program> Program { get; set; }
         public DbSet<AssignmentPeriod> AssignmentPeriod { get; set; }
         public DbSet<ProgramGroups> ProgramGroups { get; set; }
         public DbSet<Courses> Courses { get; set; }

@@ -46,14 +46,14 @@ namespace BusinessStandard.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Description")
-                        .HasColumnType("int");
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Language")
-                        .HasColumnType("int");
+                    b.Property<string>("Language")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Name")
-                        .HasColumnType("int");
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CourseID");
 
@@ -84,30 +84,6 @@ namespace BusinessStandard.Data.Migrations
                     b.ToTable("Grades");
                 });
 
-            modelBuilder.Entity("BusinessStandard.Domain.Models.Program", b =>
-                {
-                    b.Property<int>("ProgramId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("Certificate")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Diploma")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MidYear")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Primary")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProgramId");
-
-                    b.ToTable("Program");
-                });
-
             modelBuilder.Entity("BusinessStandard.Domain.Models.ProgramGroups", b =>
                 {
                     b.Property<int>("BoardID")
@@ -115,17 +91,17 @@ namespace BusinessStandard.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Commerce")
-                        .HasColumnType("int");
+                    b.Property<string>("Commerce")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Humanities")
-                        .HasColumnType("int");
+                    b.Property<string>("Humanities")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Literature")
-                        .HasColumnType("int");
+                    b.Property<string>("Literature")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Science")
-                        .HasColumnType("int");
+                    b.Property<string>("Science")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("BoardID");
 
@@ -139,14 +115,14 @@ namespace BusinessStandard.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Country")
-                        .HasColumnType("int");
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("DefaultLangOfComm")
-                        .HasColumnType("int");
+                    b.Property<string>("DefaultLangOfComm")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Name")
-                        .HasColumnType("int");
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("SchoolId");
 
@@ -177,6 +153,9 @@ namespace BusinessStandard.Data.Migrations
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SchoolId")
+                        .HasColumnType("int");
 
                     b.Property<string>("SpokenLanguages")
                         .HasColumnType("nvarchar(max)");

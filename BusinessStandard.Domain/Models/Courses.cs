@@ -9,8 +9,8 @@ namespace BusinessStandard.Domain.Models
     {
         [Key]
         public int CourseID { get; set; }
-        public int Name { get; set; }
-        public int Description { get; set; }
-        public int Language { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Language { get; set; }
     }
 }

@@ -1,0 +1,9 @@
+D:\Project\BusinessStandard\BusinessStandard.Domain\bin\Release\netcoreapp3.1\BusinessStandard.Domain.deps.json
+D:\Project\BusinessStandard\BusinessStandard.Domain\bin\Release\netcoreapp3.1\BusinessStandard.Domain.dll
+D:\Project\BusinessStandard\BusinessStandard.Domain\bin\Release\netcoreapp3.1\BusinessStandard.Domain.pdb
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Release\netcoreapp3.1\BusinessStandard.Domain.csprojAssemblyReference.cache
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Release\netcoreapp3.1\BusinessStandard.Domain.csproj.CoreCompileInputs.cache
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Release\netcoreapp3.1\BusinessStandard.Domain.AssemblyInfoInputs.cache
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Release\netcoreapp3.1\BusinessStandard.Domain.AssemblyInfo.cs
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Release\netcoreapp3.1\BusinessStandard.Domain.dll
+D:\Project\BusinessStandard\BusinessStandard.Domain\obj\Release\netcoreapp3.1\BusinessStandard.Domain.pdb
