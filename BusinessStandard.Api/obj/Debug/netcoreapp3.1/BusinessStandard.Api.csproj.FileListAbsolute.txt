@@ -319,6 +319,15 @@ D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\runtime
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.Azure.Amqp.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.Azure.ServiceBus.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.csproj.CoreCompileInputs.cache
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.MvcApplicationPartsAssemblyInfo.cs
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.MvcApplicationPartsAssemblyInfo.cache

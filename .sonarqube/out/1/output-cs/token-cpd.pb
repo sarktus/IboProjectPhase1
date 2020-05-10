@@ -2675,7 +2675,183 @@ PrimaryKey
 ´´ 	
 }
 µµ 
-}¶¶ ú
+}¶¶ ¹
+bD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509135803_AzureReadyUpdateNew.cs
+	namespace 	
+BusinessStandard
+ 
+. 
+Data 
+.  
+
+Migrations  *
+{ 
+public 
+
+partial 
+class 
+AzureReadyUpdateNew ,
+:- .
+	Migration/ 8
+{ 
+	protected 
+override 
+void 
+Up  "
+(" #
+MigrationBuilder# 3
+migrationBuilder4 D
+)D E
+{ 	
+migrationBuilder		 
+.		 
+	AddColumn		 &
+<		& '
+int		' *
+>		* +
+(		+ ,
+name
+
+ 
+:
+
+ 
+$str
+
+ #
+,
+
+# $
+table 
+: 
+$str !
+,! "
+nullable 
+: 
+false 
+,  
+defaultValue 
+: 
+$num 
+)  
+;  !
+} 	
+	protected 
+override 
+void 
+Down  $
+($ %
+MigrationBuilder% 5
+migrationBuilder6 F
+)F G
+{ 	
+migrationBuilder 
+. 
+
+DropColumn '
+(' (
+name 
+: 
+$str #
+,# $
+table 
+: 
+$str !
+)! "
+;" #
+} 	
+} 
+} ‰
+iD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509140029_AzureReadyUpdateNewDeleted.cs
+	namespace 	
+BusinessStandard
+ 
+. 
+Data 
+.  
+
+Migrations  *
+{ 
+public 
+
+partial 
+class &
+AzureReadyUpdateNewDeleted 3
+:4 5
+	Migration6 ?
+{ 
+	protected 
+override 
+void 
+Up  "
+(" #
+MigrationBuilder# 3
+migrationBuilder4 D
+)D E
+{ 	
+migrationBuilder		 
+.		 
+
+DropColumn		 '
+(		' (
+name
+
+ 
+:
+
+ 
+$str
+
+ #
+,
+
+# $
+table 
+: 
+$str !
+)! "
+;" #
+} 	
+	protected 
+override 
+void 
+Down  $
+($ %
+MigrationBuilder% 5
+migrationBuilder6 F
+)F G
+{ 	
+migrationBuilder 
+. 
+	AddColumn &
+<& '
+int' *
+>* +
+(+ ,
+name 
+: 
+$str #
+,# $
+table 
+: 
+$str !
+,! "
+type 
+: 
+$str 
+, 
+nullable 
+: 
+false 
+,  
+defaultValue 
+: 
+$num 
+)  
+;  !
+} 	
+} 
+} ú
 @D:\Project\BusinessStandard\BusinessStandard.Data\UnityOfWork.cs
 	namespace 	
 BusinessStandard
