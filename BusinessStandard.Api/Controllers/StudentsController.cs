@@ -8,6 +8,8 @@ using BusinessStandard.Data;
 using BusinessStandard.Domain.Models;
 using BusinessStandard.Domain.Models.ViewModel;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
 
 namespace BusinessStandard.Api.Controllers
 {
@@ -17,11 +19,13 @@ namespace BusinessStandard.Api.Controllers
     {
         private readonly BusinessServiceDbContext _context;
         private readonly ILogger<StudentsController> _logger;
+        private readonly IDistributedCache _cache;
 
-        public StudentsController(BusinessServiceDbContext context, ILogger<StudentsController> logger)
+        public StudentsController(BusinessServiceDbContext context, ILogger<StudentsController> logger,IDistributedCache cache)
         {
             _context = context;
             _logger = logger;
+            _cache = cache;
         }
 
         /// <summary>
@@ -32,7 +36,22 @@ namespace BusinessStandard.Api.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Students>>> GetStudents()
         {
-            return await _context.Students.ToListAsync();
+            var cachedObj = _cache.GetString("StudentCookies");
+            List<Students> listStudent = new List<Students>();
+            if (string.IsNullOrEmpty(cachedObj))
+            {
+                listStudent = await _context.Students.ToListAsync();
+
+                //Set data to redis cache
+                var options = new DistributedCacheEntryOptions();
+                options.SetAbsoluteExpiration(DateTimeOffset.Now.AddMinutes(1));
+                _cache.SetString("StudentCookies", JsonConvert.SerializeObject(listStudent), options);
+            }
+            else
+            {
+                listStudent = JsonConvert.DeserializeObject<List<Students>>(cachedObj);
+            }
+            return Ok(listStudent);
         }
 
         /// <summary>

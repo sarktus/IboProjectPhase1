@@ -27,6 +27,10 @@ namespace BusinessStandard.Api
             // Add framework services.  
             services.AddDbContext<BusinessServiceDbContext>(opts => opts.UseSqlServer(Configuration["Data:ConnectionStrings:DefaultConnection"]));
             services.AddMvc();
+            services.AddStackExchangeRedisCache(option =>
+            {
+                option.Configuration = Configuration["Data:ConnectionStrings:RedisConnection"]; //Configuration.GetConnectionString("RedisConnection");
+            });
             services.AddApplicationInsightsTelemetry();
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new Info
