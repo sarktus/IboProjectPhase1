@@ -155,3 +155,15 @@ D:\Project\BusinessStandard\BusinessStandard.Api\obj\Release\netcoreapp3.1\stati
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Release\netcoreapp3.1\BusinessStandard.Api.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Release\netcoreapp3.1\BusinessStandard.Api.pdb
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Release\netcoreapp3.1\BusinessStandard.Api.genruntimeconfig.cache
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.AI.EventCounterCollector.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.AI.PerfCounterCollector.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.ApplicationInsights.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
