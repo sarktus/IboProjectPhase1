@@ -1,6 +1,7 @@
 using BusinessStandard.Api;
 using BusinessStandard.Api.Controllers;
 using BusinessStandard.Data;
+using BusinessStandard.Domain.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -22,30 +23,32 @@ namespace BusinessStandard.UnitTest
             controller = new StudentsController(serv, logger);
         }
 
+        /// <summary>
+        /// Get Student
+        /// </summary>
+        /// <returns></returns>
+        ///
         [TestMethod]
         public async Task GetStudentsTest()
         {
             int id = 1;
 
-            var students = await controller.GetStudents(id);
-            
-            Assert.IsNotNull(students);
+            var response = await controller.GetStudents(id);
+            Assert.AreEqual("Raghu", ((Students)response.Value).Name);
         }
 
+        /// <summary>
+        /// Delete Student
+        /// </summary>
+        /// <returns></returns>
+        ///
         [TestMethod]
-        public void DeleteStudentTest()
+        public async Task DeleteStudentTest()
         {
-            int id = 1;
-            int Exist = 1;
-
-            var Del_students = controller.DeleteStudents(id);
-            //Get Updated Count of The Student
-            //int New_count = (from x in _context.Students select x).Count();
-            // int New_count = 2;
-            //Verify Count
-            // int Del_Count = count - New_count;
-            //bool Exist = controller.StudentsExists(id);
-            Assert.AreEqual(false, Exist);
+            int id = 6;
+            var Del_students = await controller.DeleteStudents(id);
+            var response = await controller.GetStudents(id);
+            Assert.AreEqual(null, response.Value);
         }
     }
 

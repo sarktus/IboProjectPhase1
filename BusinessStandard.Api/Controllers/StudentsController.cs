@@ -24,14 +24,22 @@ namespace BusinessStandard.Api.Controllers
             _logger = logger;
         }
 
-        // GET: api/Students
+        /// <summary>
+        /// Get All Students
+        /// </summary>
+        /// <returns></returns>
+        ///
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Students>>> GetStudents()
         {
-            
-            
             return await _context.Students.ToListAsync();
         }
+
+        /// <summary>
+        /// Get All Students Using ViewModel
+        /// </summary>
+        /// <returns></returns>
+        ///
 
         [HttpGet]
         [Route("GetAllStudents")]
@@ -50,8 +58,12 @@ namespace BusinessStandard.Api.Controllers
             return await result.ToListAsync();
         }
 
-
-        // GET: api/Students/5
+        /// <summary>
+        /// Get Students
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        ///
         [HttpGet("{id}")]
         public async Task<ActionResult<Students>> GetStudents(int id)
         {
@@ -65,9 +77,13 @@ namespace BusinessStandard.Api.Controllers
             return students;
         }
 
-        // PUT: api/Students/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        
+        /// <summary>
+        /// Put Students
+        /// </summary>
+        /// <param name="students,id"></param>
+        /// <returns></returns>
+        /// 
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutStudents(int id, Students students)
         {
@@ -99,9 +115,12 @@ namespace BusinessStandard.Api.Controllers
             return NoContent();
         }
 
-        // POST: api/Students
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        /// <summary>
+        /// Post Students
+        /// </summary>
+        /// <param name="students"></param>
+        /// <returns></returns>
+        /// 
         [HttpPost]
         public async Task<ActionResult<Students>> PostStudents(Students students)
         {
@@ -111,7 +130,12 @@ namespace BusinessStandard.Api.Controllers
             return CreatedAtAction("GetStudents", new { id = students.Id }, students);
         }
 
-        // DELETE: api/Students/5
+        /// <summary>
+        /// Delete Students
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// 
         [HttpDelete("{id}")]
         public async Task<ActionResult<Students>> DeleteStudents(int id)
         {
@@ -127,6 +151,11 @@ namespace BusinessStandard.Api.Controllers
             return students;
         }
 
+        /// <summary>
+        /// Checking Students Existance
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         private bool StudentsExists(int id)
         {
             return _context.Students.Any(e => e.Id == id);
