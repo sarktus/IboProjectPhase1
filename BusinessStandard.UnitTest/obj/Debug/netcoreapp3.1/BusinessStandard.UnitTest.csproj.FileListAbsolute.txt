@@ -242,3 +242,6 @@ D:\Project\BusinessStandard\BusinessStandard.UnitTest\obj\Debug\netcoreapp3.1\Bu
 D:\Project\BusinessStandard\BusinessStandard.UnitTest\obj\Debug\netcoreapp3.1\BusinessStandard.UnitTest.dll
 D:\Project\BusinessStandard\BusinessStandard.UnitTest\obj\Debug\netcoreapp3.1\BusinessStandard.UnitTest.pdb
 D:\Project\BusinessStandard\BusinessStandard.UnitTest\obj\Debug\netcoreapp3.1\BusinessStandard.UnitTest.genruntimeconfig.cache
+D:\Project\BusinessStandard\BusinessStandard.UnitTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+D:\Project\BusinessStandard\BusinessStandard.UnitTest\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+D:\Project\BusinessStandard\BusinessStandard.UnitTest\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll

@@ -3,6 +3,7 @@ using BusinessStandard.Api.Controllers;
 using BusinessStandard.Data;
 using BusinessStandard.Domain.Models;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -20,7 +21,8 @@ namespace BusinessStandard.UnitTest
             var webhost = Microsoft.AspNetCore.WebHost.CreateDefaultBuilder().UseStartup<Startup>().Build();
             var serv = webhost.Services.GetRequiredService<BusinessServiceDbContext>();
             var logger = webhost.Services.GetRequiredService<ILogger<StudentsController>>();
-            controller = new StudentsController(serv, logger);
+            var cache = webhost.Services.GetRequiredService<IDistributedCache>();
+            controller = new StudentsController(serv, logger, cache);
         }
 
         /// <summary>

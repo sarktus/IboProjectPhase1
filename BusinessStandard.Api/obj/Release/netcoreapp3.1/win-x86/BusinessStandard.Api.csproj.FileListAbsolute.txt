@@ -488,3 +488,6 @@ D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.Extensions.Logging.ApplicationInsights.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.Extensions.PlatformAbstractions.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\System.Diagnostics.PerformanceCounter.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Pipelines.Sockets.Unofficial.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\StackExchange.Redis.dll
