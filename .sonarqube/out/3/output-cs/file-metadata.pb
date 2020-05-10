@@ -1,0 +1,14 @@
+d
+[D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\AssignmentPeriodsController.csutf-8Z
+QD:\Project\BusinessStandard\BusinessStandard.Api\Controllers\CoursesController.csutf-8Y
+PD:\Project\BusinessStandard\BusinessStandard.Api\Controllers\GradesController.csutf-8`
+WD:\Project\BusinessStandard\BusinessStandard.Api\Controllers\ProgramGroupsController.csutf-8Z
+QD:\Project\BusinessStandard\BusinessStandard.Api\Controllers\SchoolsController.csutf-8[
+RD:\Project\BusinessStandard\BusinessStandard.Api\Controllers\StudentsController.csutf-8D
+;D:\Project\BusinessStandard\BusinessStandard.Api\Program.csutf-8N
+ED:\Project\BusinessStandard\BusinessStandard.Api\Resources\Contact.csutf-8K
+BD:\Project\BusinessStandard\BusinessStandard.Api\Resources\Info.csutf-8D
+;D:\Project\BusinessStandard\BusinessStandard.Api\Startup.csutf-8g
+\C:\Users\cognizantdotnet28\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.csutf-8Œ
+€D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.MvcApplicationPartsAssemblyInfo.csutf-8x
+mD:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.AssemblyInfo.csutf-8

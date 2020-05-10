@@ -1,0 +1,13 @@
+L
+CD:\Project\BusinessStandard\BusinessStandard.Domain\IUnityOfWork.csutf-8W
+ND:\Project\BusinessStandard\BusinessStandard.Domain\Models\AssignmentPeriod.csutf-8N
+ED:\Project\BusinessStandard\BusinessStandard.Domain\Models\Courses.csutf-8M
+DD:\Project\BusinessStandard\BusinessStandard.Domain\Models\Grades.csutf-8T
+KD:\Project\BusinessStandard\BusinessStandard.Domain\Models\ProgramGroups.csutf-8N
+ED:\Project\BusinessStandard\BusinessStandard.Domain\Models\Schools.csutf-8O
+FD:\Project\BusinessStandard\BusinessStandard.Domain\Models\Students.csutf-8a
+XD:\Project\BusinessStandard\BusinessStandard.Domain\Models\ViewModel\StudentViewModel.csutf-8V
+MD:\Project\BusinessStandard\BusinessStandard.Domain\Repositories\IStudents.csutf-8U
+LD:\Project\BusinessStandard\BusinessStandard.Domain\Services\StudentsRepo.csutf-8g
+\C:\Users\cognizantdotnet28\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.csutf-8~
+sD:\Project\BusinessStandard\BusinessStandard.Domain\obj\Debug\netcoreapp3.1\BusinessStandard.Domain.AssemblyInfo.csutf-8

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BusinessStandard.Data;
 using BusinessStandard.Domain.Models;
 using BusinessStandard.Domain.Models.ViewModel;
+using Microsoft.Extensions.Logging;
 
 namespace BusinessStandard.Api.Controllers
 {
@@ -16,16 +16,20 @@ namespace BusinessStandard.Api.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly BusinessServiceDbContext _context;
+        private readonly ILogger<StudentsController> _logger;
 
-        public StudentsController(BusinessServiceDbContext context)
+        public StudentsController(BusinessServiceDbContext context, ILogger<StudentsController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         // GET: api/Students
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Students>>> GetStudents()
         {
+            
+            
             return await _context.Students.ToListAsync();
         }
 
@@ -63,7 +67,7 @@ namespace BusinessStandard.Api.Controllers
 
         // PUT: api/Students/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+        
         [HttpPut("{id}")]
         public async Task<IActionResult> PutStudents(int id, Students students)
         {
@@ -79,8 +83,9 @@ namespace BusinessStandard.Api.Controllers
             {
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
+            catch (Exception ex)
             {
+                _logger.LogError(ex, ex.Message);
                 if (!StudentsExists(id))
                 {
                     return NotFound();

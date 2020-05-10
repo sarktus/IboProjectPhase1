@@ -1,0 +1,108 @@
+D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\AssignmentPeriodsController.cs
+GetAssignmentPeriod 5
+GetAssignmentPeriod -1
+GetAssignmentPeriod 5
+GetAssignmentPeriod -1
+PutAssignmentPeriod 6
+PutAssignmentPeriod -1
+PostAssignmentPeriod 8
+PostAssignmentPeriod -1
+DeleteAssignmentPeriod 5
+DeleteAssignmentPeriod -1
+AssignmentPeriodExists 5
+AssignmentPeriodExists -1
+
+D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\CoursesController.cs
+GetCourses 5
+GetCourses -1
+GetCourses 5
+GetCourses -1
+PutCourses 6
+PutCourses -1
+PostCourses 4
+PostCourses -1
+DeleteCourses 5
+DeleteCourses -1
+CoursesExists 4
+CoursesExists -1
+
+D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\GradesController.cs
+GetGrades 3
+GetGrades -1
+GetGrades 3
+GetGrades -1
+PutGrades 3
+PutGrades -1
+PostGrades 2
+PostGrades -1
+DeleteGrades 3
+DeleteGrades -1
+GradesExists 4
+GradesExists -1
+
+D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\ProgramGroupsController.cs
+GetProgramGroups 4
+GetProgramGroups -1
+GetProgramGroups 7
+GetProgramGroups -1
+PutProgramGroups 3
+PutProgramGroups -1
+PostProgramGroups 2
+PostProgramGroups -1
+DeleteProgramGroups 2
+DeleteProgramGroups -1
+ProgramGroupsExists 2
+ProgramGroupsExists -1
+
+D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\SchoolsController.cs
+GetSchools 4
+GetSchools -1
+GetSchools 6
+GetSchools -1
+PutSchools 4
+PutSchools -1
+PostSchools 4
+PostSchools -1
+DeleteSchools 3
+DeleteSchools -1
+SchoolsExists 3
+SchoolsExists -1
+
+D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\StudentsController.cs
+GetStudents 4
+GetStudents -1
+GetAllStudents 4
+GetAllStudents -1
+GetStudents 4
+GetStudents -1
+PutStudents 3
+PutStudents -1
+PostStudents 5
+PostStudents -1
+DeleteStudents 10
+DeleteStudents -1
+StudentsExists 6
+StudentsExists -1
+
+D:\Project\BusinessStandard\BusinessStandard.Api\Program.cs
+Main 10
+Main -1
+CreateHostBuilder 5
+CreateHostBuilder -1
+
+D:\Project\BusinessStandard\BusinessStandard.Api\Resources\Contact.cs
+
+D:\Project\BusinessStandard\BusinessStandard.Api\Resources\Info.cs
+
+D:\Project\BusinessStandard\BusinessStandard.Api\Startup.cs
+ConfigureServices 5
+ConfigureServices -1
+Configure 4
+Configure -1
+
+C:\Users\cognizantdotnet28\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+
+D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.MvcApplicationPartsAssemblyInfo.cs
+
+D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.AssemblyInfo.cs
+

@@ -1,0 +1,12 @@
+File name	Line	Function	Duration[ms]	Explored nodes
+D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200503164526_ModelsAdded.cs	122	_BusinessStandard.Data.Migrations.ModelsAdded.Down$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200503165115_ModelsAdd.cs	6	_BusinessStandard.Data.Migrations.ModelsAdd.Up$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	2
+D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200503165115_ModelsAdd.cs	11	_BusinessStandard.Data.Migrations.ModelsAdd.Down$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	2
+D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200504061344_ModelsAddNew.cs	6	_BusinessStandard.Data.Migrations.ModelsAddNew.Up$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200504061344_ModelsAddNew.cs	33	_BusinessStandard.Data.Migrations.ModelsAddNew.Down$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200504144630_ViewModelsAdd.cs	6	_BusinessStandard.Data.Migrations.ViewModelsAdd.Up$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200504144630_ViewModelsAdd.cs	15	_BusinessStandard.Data.Migrations.ViewModelsAdd.Down$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505060953_AzureReady.cs	6	_BusinessStandard.Data.Migrations.AzureReady.Up$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	2
+D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505060953_AzureReady.cs	11	_BusinessStandard.Data.Migrations.AzureReady.Down$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	2
+D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505134656_AzureReadyUpdate.cs	6	_BusinessStandard.Data.Migrations.AzureReadyUpdate.Up$Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder$	0	3
+D:\Project\BusinessStandard\BusinessStandard.Data\BusinessServiceDbContext.cs	25	_BusinessStandard.Data.BusinessServiceDbContext.OnConfiguring$Microsoft.EntityFrameworkCore.DbContextOptionsBuilder$	0	2

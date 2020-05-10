@@ -151,8 +151,6 @@ C:\Users\cognizantdotnet28\source\repos\BusinessStandard\BusinessStandard.Api\ob
 C:\Users\cognizantdotnet28\source\repos\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\BusinessStandard.Services.dll
 C:\Users\cognizantdotnet28\source\repos\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\BusinessStandard.Services.pdb
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.csprojAssemblyReference.cache
-D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.csproj.CoreCompileInputs.cache
-D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.AssemblyInfoInputs.cache
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.AssemblyInfo.cs
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
@@ -306,4 +304,18 @@ D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\staticw
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.pdb
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.genruntimeconfig.cache
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.AI.EventCounterCollector.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.AI.PerfCounterCollector.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.ApplicationInsights.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.csproj.CoreCompileInputs.cache
 D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Project\BusinessStandard\BusinessStandard.Api\obj\Debug\netcoreapp3.1\BusinessStandard.Api.MvcApplicationPartsAssemblyInfo.cache
