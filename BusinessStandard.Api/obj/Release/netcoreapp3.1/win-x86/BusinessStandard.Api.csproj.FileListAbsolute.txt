@@ -500,3 +500,4 @@ D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.IdentityModel.Logging.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.IdentityModel.Tokens.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\System.IdentityModel.Tokens.Jwt.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.WindowsAzure.Storage.dll

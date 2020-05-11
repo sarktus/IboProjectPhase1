@@ -460,7 +460,125 @@ HttpDeleteZZ	 
 ;  
 } 	
 } 
-} ©2
+} ™
+\D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\BlobImplementationController.cs
+	namespace
+
+ 	
+BusinessStandard
+
+
+ 
+.
+
+ 
+Api
+
+ 
+.
+
+ 
+Controllers
+
+ *
+{ 
+[ 
+Route 
+
+(
+ 
+$str 
+) 
+] 
+[ 
+ApiController 
+] 
+public 
+
+class (
+BlobImplementationController -
+:. /
+ControllerBase0 >
+{ 
+[ 	
+HttpPost	 
+] 
+public 
+async 
+Task 
+< 
+IActionResult '
+>' (
+upload) /
+(/ 0
+	IFormFile0 9
+file: >
+)> ?
+{ 	
+BlobStorageService 
+_blobStorageService 2
+=3 4
+new5 8
+BlobStorageService9 K
+(K L
+)L M
+;M N
+var 
+fileName 
+= 
+Path 
+.  
+GetFileName  +
+(+ ,
+file, 0
+.0 1
+FileName1 9
+)9 :
+;: ;
+string 
+mimeType 
+= 
+file "
+." #
+ContentType# .
+;. /
+byte 
+[ 
+] 
+fileData 
+= 
+new !
+byte" &
+[& '
+file' +
+.+ ,
+Length, 2
+]2 3
+;3 4
+var 
+url 
+= 
+await 
+_blobStorageService /
+./ 0!
+UploadFileToBlobAsync0 E
+(E F
+fileNameF N
+,N O
+fileDataP X
+,X Y
+mimeTypeZ b
+)b c
+;c d
+return 
+Ok 
+( 
+url 
+) 
+; 
+} 	
+} 
+} ©2
 QD:\Project\BusinessStandard\BusinessStandard.Api\Controllers\CoursesController.cs
 	namespace 	
 BusinessStandard
@@ -2739,7 +2857,7 @@ HttpDelete
 ¡¡ 
 async
 ¡¡ 
-void
+Task
 ¡¡ 
 Sender
 ¡¡  
@@ -3232,7 +3350,529 @@ SeekOriginKK %
 ;OO 
 }PP 	
 }QQ 
-}RR Ω
+}RR ÕH
+PD:\Project\BusinessStandard\BusinessStandard.Api\Resources\BlobStorageService.cs
+	namespace
+
+ 	
+BusinessStandard
+
+
+ 
+.
+
+ 
+Api
+
+ 
+.
+
+ 
+	Resources
+
+ (
+{ 
+public 
+
+class 
+BlobStorageService #
+{ 
+string 
+	accessKey 
+= 
+string !
+.! "
+Empty" '
+;' (
+public 
+BlobStorageService !
+(! "
+)" #
+{ 	
+var 
+builder 
+= 
+new  
+ConfigurationBuilder 2
+(2 3
+)3 4
+.4 5
+SetBasePath5 @
+(@ A
+SystemA G
+.G H
+IOH J
+.J K
+	DirectoryK T
+.T U
+GetCurrentDirectoryU h
+(h i
+)i j
+)j k
+.k l
+AddJsonFilel w
+(w x
+$str	x ä
+)
+ä ã
+;
+ã å
+var 
+configuration 
+= 
+builder  '
+.' (
+Build( -
+(- .
+). /
+;/ 0
+this 
+. 
+	accessKey 
+= 
+configuration *
+[* +
+$str+ S
+]S T
+;T U
+} 	
+public 
+string 
+UploadFileToBlob &
+(& '
+string' -
+strFileName. 9
+,9 :
+byte; ?
+[? @
+]@ A
+fileDataB J
+,J K
+stringL R
+fileMimeTypeS _
+)_ `
+{ 	
+try 
+{ 
+var 
+_task 
+= 
+Task  
+.  !
+Run! $
+($ %
+(% &
+)& '
+=>( *
+this+ /
+./ 0!
+UploadFileToBlobAsync0 E
+(E F
+strFileNameF Q
+,Q R
+fileDataS [
+,[ \
+fileMimeType] i
+)i j
+)j k
+;k l
+_task 
+. 
+Wait 
+( 
+) 
+; 
+string 
+fileUrl 
+=  
+_task! &
+.& '
+Result' -
+;- .
+return 
+fileUrl 
+; 
+}   
+catch!! 
+(!! 
+	Exception!! 
+ex!! 
+)!!  
+{"" 
+throw## 
+(## 
+ex## 
+)## 
+;## 
+}$$ 
+}%% 	
+public'' 
+async'' 
+Task'' 
+DeleteBlobData'' (
+(''( )
+string'') /
+fileUrl''0 7
+)''7 8
+{(( 	
+Uri)) 
+uriObj)) 
+=)) 
+new)) 
+Uri))  
+())  !
+fileUrl))! (
+)))( )
+;))) *
+string** 
+BlobName** 
+=** 
+Path** "
+.**" #
+GetFileName**# .
+(**. /
+uriObj**/ 5
+.**5 6
+	LocalPath**6 ?
+)**? @
+;**@ A
+CloudStorageAccount,, 
+cloudStorageAccount,,  3
+=,,4 5
+CloudStorageAccount,,6 I
+.,,I J
+Parse,,J O
+(,,O P
+	accessKey,,P Y
+),,Y Z
+;,,Z [
+CloudBlobClient-- 
+cloudBlobClient-- +
+=--, -
+cloudStorageAccount--. A
+.--A B!
+CreateCloudBlobClient--B W
+(--W X
+)--X Y
+;--Y Z
+string.. 
+strContainerName.. #
+=..$ %
+$str..& 3
+;..3 4
+CloudBlobContainer// 
+cloudBlobContainer// 1
+=//2 3
+cloudBlobClient//4 C
+.//C D!
+GetContainerReference//D Y
+(//Y Z
+strContainerName//Z j
+)//j k
+;//k l
+string11 
+
+pathPrefix11 
+=11 
+DateTime11  (
+.11( )
+Now11) ,
+.11, -
+ToUniversalTime11- <
+(11< =
+)11= >
+.11> ?
+ToString11? G
+(11G H
+$str11H T
+)11T U
++11V W
+$str11X [
+;11[ \
+CloudBlobDirectory22 
+blobDirectory22 ,
+=22- .
+cloudBlobContainer22/ A
+.22A B!
+GetDirectoryReference22B W
+(22W X
+
+pathPrefix22X b
+)22b c
+;22c d
+CloudBlockBlob44 
+	blockBlob44 $
+=44% &
+blobDirectory44' 4
+.444 5!
+GetBlockBlobReference445 J
+(44J K
+BlobName44K S
+)44S T
+;44T U
+await77 
+	blockBlob77 
+.77 
+DeleteAsync77 '
+(77' (
+)77( )
+;77) *
+}88 	
+private;; 
+string;; 
+GenerateFileName;; '
+(;;' (
+string;;( .
+fileName;;/ 7
+);;7 8
+{<< 	
+string== 
+strFileName== 
+===  
+string==! '
+.==' (
+Empty==( -
+;==- .
+string>> 
+[>> 
+]>> 
+strName>> 
+=>> 
+fileName>> '
+.>>' (
+Split>>( -
+(>>- .
+$char>>. 1
+)>>1 2
+;>>2 3
+strFileName?? 
+=?? 
+DateTime?? "
+.??" #
+Now??# &
+.??& '
+ToUniversalTime??' 6
+(??6 7
+)??7 8
+.??8 9
+ToString??9 A
+(??A B
+$str??B N
+)??N O
++??P Q
+$str??R U
++??V W
+DateTime??X `
+.??` a
+Now??a d
+.??d e
+ToUniversalTime??e t
+(??t u
+)??u v
+.??v w
+ToString??w 
+(	?? Ä
+$str
+??Ä ñ
+)
+??ñ ó
++
+??ò ô
+$str
+??ö ù
++
+??û ü
+strName
+??† ß
+[
+??ß ®
+strName
+??® Ø
+.
+??Ø ∞
+Length
+??∞ ∂
+-
+??∑ ∏
+$num
+??π ∫
+]
+??∫ ª
+;
+??ª º
+return@@ 
+strFileName@@ 
+;@@ 
+}AA 	
+publicCC 
+asyncCC 
+TaskCC 
+<CC 
+stringCC  
+>CC  !!
+UploadFileToBlobAsyncCC" 7
+(CC7 8
+stringCC8 >
+strFileNameCC? J
+,CCJ K
+byteCCL P
+[CCP Q
+]CCQ R
+fileDataCCS [
+,CC[ \
+stringCC] c
+fileMimeTypeCCd p
+)CCp q
+{DD 	
+tryEE 
+{FF 
+CloudStorageAccountGG #
+cloudStorageAccountGG$ 7
+=GG8 9
+CloudStorageAccountGG: M
+.GGM N
+ParseGGN S
+(GGS T
+	accessKeyGGT ]
+)GG] ^
+;GG^ _
+CloudBlobClientHH 
+cloudBlobClientHH  /
+=HH0 1
+cloudStorageAccountHH2 E
+.HHE F!
+CreateCloudBlobClientHHF [
+(HH[ \
+)HH\ ]
+;HH] ^
+stringII 
+strContainerNameII '
+=II( )
+$strII* 7
+;II7 8
+CloudBlobContainerJJ "
+cloudBlobContainerJJ# 5
+=JJ6 7
+cloudBlobClientJJ8 G
+.JJG H!
+GetContainerReferenceJJH ]
+(JJ] ^
+strContainerNameJJ^ n
+)JJn o
+;JJo p
+stringKK 
+fileNameKK 
+=KK  !
+thisKK" &
+.KK& '
+GenerateFileNameKK' 7
+(KK7 8
+strFileNameKK8 C
+)KKC D
+;KKD E
+ifMM 
+(MM 
+awaitMM 
+cloudBlobContainerMM ,
+.MM, -"
+CreateIfNotExistsAsyncMM- C
+(MMC D
+)MMD E
+)MME F
+{NN 
+awaitOO 
+cloudBlobContainerOO ,
+.OO, -
+SetPermissionsAsyncOO- @
+(OO@ A
+newOOA D$
+BlobContainerPermissionsOOE ]
+{OO^ _
+PublicAccessOO` l
+=OOm n*
+BlobContainerPublicAccessType	OOo å
+.
+OOå ç
+Blob
+OOç ë
+}
+OOí ì
+)
+OOì î
+;
+OOî ï
+}PP 
+ifRR 
+(RR 
+fileNameRR 
+!=RR 
+nullRR  $
+&&RR% '
+fileDataRR( 0
+!=RR1 3
+nullRR4 8
+)RR8 9
+{SS 
+CloudBlockBlobTT "
+cloudBlockBlobTT# 1
+=TT2 3
+cloudBlobContainerTT4 F
+.TTF G!
+GetBlockBlobReferenceTTG \
+(TT\ ]
+fileNameTT] e
+)TTe f
+;TTf g
+cloudBlockBlobUU "
+.UU" #
+
+PropertiesUU# -
+.UU- .
+ContentTypeUU. 9
+=UU: ;
+fileMimeTypeUU< H
+;UUH I
+awaitVV 
+cloudBlockBlobVV (
+.VV( )$
+UploadFromByteArrayAsyncVV) A
+(VVA B
+fileDataVVB J
+,VVJ K
+$numVVL M
+,VVM N
+fileDataVVO W
+.VVW X
+LengthVVX ^
+)VV^ _
+;VV_ `
+returnWW 
+cloudBlockBlobWW )
+.WW) *
+UriWW* -
+.WW- .
+AbsoluteUriWW. 9
+;WW9 :
+}XX 
+returnYY 
+$strYY 
+;YY 
+}ZZ 
+catch[[ 
+([[ 
+	Exception[[ 
+ex[[ 
+)[[  
+{\\ 
+throw]] 
+(]] 
+ex]] 
+)]] 
+;]] 
+}^^ 
+}__ 	
+}`` 
+}aa Ω
 ED:\Project\BusinessStandard\BusinessStandard.Api\Resources\Contact.cs
 	namespace 	
 BusinessStandard

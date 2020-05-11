@@ -1,11 +1,11 @@
 D:\Project\BusinessStandard\BusinessStandard.Data\BusinessServiceDbContext.cs
-OnConfiguring 7
+OnConfiguring 5
 OnConfiguring -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200503164526_ModelsAdded.cs
-Up 6
+Up 5
 Up -1
-Down 7
+Down 14
 Down -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200503164526_ModelsAdded.Designer.cs
@@ -13,7 +13,7 @@ BuildTargetModel 4
 BuildTargetModel -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200503165115_ModelsAdd.cs
-Up 3
+Up 29
 Up -1
 Down 4
 Down -1
@@ -25,7 +25,7 @@ BuildTargetModel -1
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200504061344_ModelsAddNew.cs
 Up 7
 Up -1
-Down 7
+Down 6
 Down -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200504061344_ModelsAddNew.Designer.cs
@@ -39,7 +39,7 @@ Down 4
 Down -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200504144630_ViewModelsAdd.Designer.cs
-BuildTargetModel 26
+BuildTargetModel 39
 BuildTargetModel -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505060953_AzureReady.cs
@@ -49,23 +49,23 @@ Down 4
 Down -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505060953_AzureReady.Designer.cs
-BuildTargetModel 8
+BuildTargetModel 5
 BuildTargetModel -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505134656_AzureReadyUpdate.cs
-Up 13
+Up 11
 Up -1
-Down 7
+Down 15
 Down -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505134656_AzureReadyUpdate.Designer.cs
-BuildTargetModel 4
+BuildTargetModel 5
 BuildTargetModel -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509135803_AzureReadyUpdateNew.cs
-Up 5
+Up 4
 Up -1
-Down 4
+Down 5
 Down -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509135803_AzureReadyUpdateNew.Designer.cs
@@ -73,13 +73,13 @@ BuildTargetModel 4
 BuildTargetModel -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509140029_AzureReadyUpdateNewDeleted.cs
-Up 12
+Up 4
 Up -1
-Down 4
+Down 28
 Down -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509140029_AzureReadyUpdateNewDeleted.Designer.cs
-BuildTargetModel 5
+BuildTargetModel 4
 BuildTargetModel -1
 
 D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\BusinessServiceDbContextModelSnapshot.cs

@@ -36,7 +36,7 @@ namespace BusinessStandard.Api.Resources
             }
         }
 
-        public async void DeleteBlobData(string fileUrl)
+        public async Task DeleteBlobData(string fileUrl)
         {
             Uri uriObj = new Uri(fileUrl);
             string BlobName = Path.GetFileName(uriObj.LocalPath);
