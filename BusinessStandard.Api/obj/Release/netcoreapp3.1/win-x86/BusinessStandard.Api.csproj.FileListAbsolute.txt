@@ -491,3 +491,12 @@ D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Pipelines.Sockets.Unofficial.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\StackExchange.Redis.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.Azure.Amqp.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.Azure.ServiceBus.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.Azure.Services.AppAuthentication.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.IdentityModel.Logging.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\Microsoft.IdentityModel.Tokens.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\win-x86\System.IdentityModel.Tokens.Jwt.dll

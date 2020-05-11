@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ehdzYwR+i3ddeCKzrrFGRFs6TsBCCEaNhjz707/8Ty8N9TIFJ3qIMrZgwpuAnqhEzeaZqwjNN2pOmA2hxHtqSA==",
+  "dgSpecHash": "Q1Ufx2IgqMfJRLf4Ul7uJMbFQupHjgXLFblszNe5wW/JtEctDBlNJzvkqausYVx2msHNFoLfct0DCgWhH+N9GQ==",
   "success": true,
   "projectFilePath": "D:\\Project\\BusinessStandard\\BusinessStandard.Api\\BusinessStandard.Api.csproj",
   "expectedPackageFiles": [
@@ -227,7 +227,8 @@
     "C:\\Users\\cognizantdotnet28\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\cognizantdotnet28\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\cognizantdotnet28\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\cognizantdotnet28\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\cognizantdotnet28\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\cognizantdotnet28\\.nuget\\packages\\windowsazure.storage\\9.3.3\\windowsazure.storage.9.3.3.nupkg.sha512"
   ],
   "logs": []
 }

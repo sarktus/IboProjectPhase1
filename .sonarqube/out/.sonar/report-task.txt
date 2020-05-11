@@ -1,6 +1,6 @@
-projectKey=IboEFProject
+projectKey=IBOStandardPhare2
 serverUrl=http://localhost:9000
 serverVersion=8.2.0.32929
-dashboardUrl=http://localhost:9000/dashboard?id=IboEFProject
-ceTaskId=AXH_971kKAyl9rDNBoOC
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXH_971kKAyl9rDNBoOC
+dashboardUrl=http://localhost:9000/dashboard?id=IBOStandardPhare2
+ceTaskId=AXIBtfgZKAyl9rDNBoOQ
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXIBtfgZKAyl9rDNBoOQ

@@ -7,7 +7,7 @@ PutAssignmentPeriod 3
 PutAssignmentPeriod -1
 PostAssignmentPeriod 3
 PostAssignmentPeriod -1
-DeleteAssignmentPeriod 3
+DeleteAssignmentPeriod 5
 DeleteAssignmentPeriod -1
 AssignmentPeriodExists 3
 AssignmentPeriodExists -1
@@ -17,29 +17,29 @@ Get 3
 Get -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\CoursesController.cs
-GetCourses 5
+GetCourses 3
 GetCourses -1
 GetCourses 3
 GetCourses -1
 PutCourses 3
 PutCourses -1
-PostCourses 2
+PostCourses 3
 PostCourses -1
-DeleteCourses 2
+DeleteCourses 6
 DeleteCourses -1
-CoursesExists 2
+CoursesExists 5
 CoursesExists -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\GradesController.cs
-GetGrades 2
+GetGrades 7
 GetGrades -1
-GetGrades 2
+GetGrades 3
 GetGrades -1
-PutGrades 2
+PutGrades 3
 PutGrades -1
-PostGrades 2
+PostGrades 3
 PostGrades -1
-DeleteGrades 45
+DeleteGrades 3
 DeleteGrades -1
 GradesExists 3
 GradesExists -1
@@ -51,7 +51,7 @@ GetProgramGroups 3
 GetProgramGroups -1
 PutProgramGroups 3
 PutProgramGroups -1
-PostProgramGroups 3
+PostProgramGroups 17
 PostProgramGroups -1
 DeleteProgramGroups 3
 DeleteProgramGroups -1
@@ -59,57 +59,49 @@ ProgramGroupsExists 3
 ProgramGroupsExists -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\SchoolsController.cs
-GetSchools 14
+GetSchools 5
 GetSchools -1
-GetSchools 3
+GetSchools 5
 GetSchools -1
 PutSchools 3
 PutSchools -1
 PostSchools 3
 PostSchools -1
-DeleteSchools 3
+DeleteSchools 5
 DeleteSchools -1
-SchoolsExists 3
+SchoolsExists 5
 SchoolsExists -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\StudentsController.cs
-GetStudents 5
+GetStudents 21
 GetStudents -1
 GetAllStudents 3
 GetAllStudents -1
-GetStudents 3
+GetStudents 4
 GetStudents -1
-PutStudents 2
+PutStudents 3
 PutStudents -1
-PostStudents 32
+PostStudents 24
 PostStudents -1
 DeleteStudents 4
 DeleteStudents -1
 StudentsExists 3
 StudentsExists -1
-Sender 3
+Sender 7
 Sender -1
-ExceptionReceivedHandler 6
-ExceptionReceivedHandler -1
-RegisterOnMessageHandlerAndReceiveMessages 5
-RegisterOnMessageHandlerAndReceiveMessages -1
-ProcessMessagesAsync 3
-ProcessMessagesAsync -1
-Receiver 3
-Receiver -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Program.cs
-Main 8
+Main 32
 Main -1
 CreateHostBuilder 3
 CreateHostBuilder -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Resources\AzureFunctionInvokeHelper.cs
-InvokeFunction 3
+InvokeFunction 4
 InvokeFunction -1
-SerializeJsonIntoStream 3
+SerializeJsonIntoStream 5
 SerializeJsonIntoStream -1
-CreateHttpContent 5
+CreateHttpContent 8
 CreateHttpContent -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Resources\Contact.cs
@@ -117,7 +109,7 @@ D:\Project\BusinessStandard\BusinessStandard.Api\Resources\Contact.cs
 D:\Project\BusinessStandard\BusinessStandard.Api\Resources\Info.cs
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Startup.cs
-ConfigureServices 4
+ConfigureServices 7
 ConfigureServices -1
 Configure 4
 Configure -1

@@ -117,6 +117,27 @@
           }
         },
         {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'StudentsController.SubscriptionClient' is never used",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 36,
+                  "endLine": 27,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
           "ruleId": "S125",
           "level": "warning",
           "message": "Remove this commented out code.",
@@ -125,9 +146,9 @@
               "resultFile": {
                 "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
                 "region": {
-                  "startLine": 117,
+                  "startLine": 116,
                   "startColumn": 13,
-                  "endLine": 117,
+                  "endLine": 116,
                   "endColumn": 32
                 }
               }
@@ -243,18 +264,123 @@
           }
         },
         {
-          "ruleId": "S2933",
+          "ruleId": "S1128",
           "level": "warning",
-          "message": "Make 'AzureFuntionUrl' 'readonly'.",
+          "message": "Remove this unnecessary 'using'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Resources/AzureFunctionInvokeHelper.cs",
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/GradesController.cs",
                 "region": {
-                  "startLine": 14,
-                  "startColumn": 24,
-                  "endLine": 14,
-                  "endColumn": 39
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/GradesController.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/ProgramGroupsController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/ProgramGroupsController.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/SchoolsController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/SchoolsController.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 33
                 }
               }
             }
@@ -291,117 +417,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/GradesController.cs",
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
                 "region": {
-                  "startLine": 1,
+                  "startLine": 15,
                   "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/GradesController.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 1,
-                  "endLine": 5,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/ProgramGroupsController.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/ProgramGroupsController.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 1,
-                  "endLine": 5,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/SchoolsController.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1,
-                  "endLine": 1,
-                  "endColumn": 14
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1128",
-          "level": "warning",
-          "message": "Remove this unnecessary 'using'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/SchoolsController.cs",
-                "region": {
-                  "startLine": 5,
-                  "startColumn": 1,
-                  "endLine": 5,
-                  "endColumn": 33
+                  "endLine": 15,
+                  "endColumn": 24
                 }
               }
             }
@@ -539,6 +560,27 @@
         {
           "ruleId": "S2933",
           "level": "warning",
+          "message": "Make 'AzureFuntionUrl' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Resources/AzureFunctionInvokeHelper.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 24,
+                  "endLine": 14,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
           "message": "Make 'connectionStringSender' 'readonly'.",
           "locations": [
             {
@@ -579,18 +621,18 @@
           }
         },
         {
-          "ruleId": "S2933",
+          "ruleId": "S1144",
           "level": "warning",
-          "message": "Make 'connectionStringReceiver' 'readonly'.",
+          "message": "Remove the unused private field 'SubscriptionClient'.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
                 "region": {
-                  "startLine": 30,
-                  "startColumn": 16,
-                  "endLine": 30,
-                  "endColumn": 40
+                  "startLine": 27,
+                  "startColumn": 9,
+                  "endLine": 27,
+                  "endColumn": 55
                 }
               }
             }
@@ -600,17 +642,54 @@
           }
         },
         {
-          "ruleId": "S2933",
+          "ruleId": "S4136",
           "level": "warning",
-          "message": "Make 'SubscriptionName' 'readonly'.",
+          "message": "All 'GetStudents' method overloads should be adjacent.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
                 "region": {
-                  "startLine": 31,
-                  "startColumn": 16,
-                  "endLine": 31,
+                  "startLine": 44,
+                  "startColumn": 64,
+                  "endLine": 44,
+                  "endColumn": 75
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 51,
+                  "endLine": 94,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Non-adjacent overload"
+            }
+          }
+        },
+        {
+          "ruleId": "S4823",
+          "level": "warning",
+          "message": "Make sure that command line arguments are used safely here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Program.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 28,
+                  "endLine": 14,
                   "endColumn": 32
                 }
               }
@@ -642,43 +721,6 @@
           }
         },
         {
-          "ruleId": "S4136",
-          "level": "warning",
-          "message": "All 'GetStudents' method overloads should be adjacent.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
-                "region": {
-                  "startLine": 45,
-                  "startColumn": 64,
-                  "endLine": 45,
-                  "endColumn": 75
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
-                "region": {
-                  "startLine": 95,
-                  "startColumn": 51,
-                  "endLine": 95,
-                  "endColumn": 62
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "0": "Non-adjacent overload"
-            }
-          }
-        },
-        {
           "ruleId": "S1854",
           "level": "warning",
           "message": "Remove this useless assignment to local variable 'listStudent'.",
@@ -687,9 +729,9 @@
               "resultFile": {
                 "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
                 "region": {
-                  "startLine": 48,
+                  "startLine": 47,
                   "startColumn": 40,
-                  "endLine": 48,
+                  "endLine": 47,
                   "endColumn": 62
                 }
               }
@@ -721,27 +763,6 @@
           }
         },
         {
-          "ruleId": "S4823",
-          "level": "warning",
-          "message": "Make sure that command line arguments are used safely here.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Program.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 28,
-                  "endLine": 14,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S3168",
           "level": "warning",
           "message": "Return 'Task' instead.",
@@ -750,9 +771,9 @@
               "resultFile": {
                 "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
                 "region": {
-                  "startLine": 194,
+                  "startLine": 193,
                   "startColumn": 22,
-                  "endLine": 194,
+                  "endLine": 193,
                   "endColumn": 26
                 }
               }
@@ -771,9 +792,9 @@
               "resultFile": {
                 "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
                 "region": {
-                  "startLine": 197,
+                  "startLine": 196,
                   "startColumn": 13,
-                  "endLine": 197,
+                  "endLine": 196,
                   "endColumn": 26
                 }
               }
@@ -795,82 +816,6 @@
           "properties": {
             "warningLevel": 1
           }
-        },
-        {
-          "ruleId": "S1481",
-          "level": "warning",
-          "message": "Remove the unused local variable 'MessageReceived'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
-                "region": {
-                  "startLine": 228,
-                  "startColumn": 20,
-                  "endLine": 228,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3168",
-          "level": "warning",
-          "message": "Return 'Task' instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
-                "region": {
-                  "startLine": 235,
-                  "startColumn": 22,
-                  "endLine": 235,
-                  "endColumn": 26
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2696",
-          "level": "warning",
-          "message": "Make the enclosing instance method 'static' or remove this set on the 'static' field.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
-                "region": {
-                  "startLine": 237,
-                  "startColumn": 13,
-                  "endLine": 237,
-                  "endColumn": 33
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 36,
-                  "endLine": 27,
-                  "endColumn": 54
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
         }
       ],
       "rules": {
@@ -878,6 +823,19 @@
           "id": "CS0108",
           "shortDescription": "Member hides inherited member; missing new keyword",
           "fullDescription": "A variable was declared with the same name as a variable in a base class. However, the new keyword was not used. This warning informs you that you should use new; the variable is declared as if new had been used in the declaration.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS0169": {
+          "id": "CS0169",
+          "shortDescription": "Field is never used",
           "defaultLevel": "warning",
           "properties": {
             "category": "Compiler",
@@ -922,6 +880,24 @@
             ]
           }
         },
+        "S1144": {
+          "id": "S1144",
+          "shortDescription": "Unused private types or members should be removed",
+          "fullDescription": "private or internal types or private members that are never executed or referenced are dead code: unnecessary, inoperative code that should be removed. Cleaning out dead code decreases the size of the maintained codebase, making it easier to understand the program and preventing bugs from being introduced.",
+          "defaultLevel": "note",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1144",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope",
+              "Unnecessary"
+            ]
+          }
+        },
         "S125": {
           "id": "S125",
           "shortDescription": "Sections of code should not be commented out",
@@ -952,23 +928,6 @@
               "C#",
               "SonarWay",
               "MainSourceScope"
-            ]
-          }
-        },
-        "S1481": {
-          "id": "S1481",
-          "shortDescription": "Unused local variables should be removed",
-          "fullDescription": "If a local variable is declared but not used, it is dead code and should be removed. Doing so will improve maintainability because developers will not wonder what the variable is used for.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
-          "properties": {
-            "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "SonarWay",
-              "MainSourceScope",
-              "TestSourceScope"
             ]
           }
         },

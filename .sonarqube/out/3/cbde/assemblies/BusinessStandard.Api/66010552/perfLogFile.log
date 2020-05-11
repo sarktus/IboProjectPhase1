@@ -1,5 +1,0 @@
-File name	Line	Function	Duration[ms]	Explored nodes
-D:\Project\BusinessStandard\BusinessStandard.Api\Resources\AzureFunctionInvokeHelper.cs	67	_BusinessStandard.Api.Resources.AzureFunctionInvokeHelper.CreateHttpContent$object$	0	5
-D:\Project\BusinessStandard\BusinessStandard.Api\Program.cs	13	_BusinessStandard.Api.Program.Main$string$$$	0	3
-D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\StudentsController.cs	203	_BusinessStandard.Api.Controllers.StudentsController.ExceptionReceivedHandler$Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs$	0	2
-D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\StudentsController.cs	215	_BusinessStandard.Api.Controllers.StudentsController.RegisterOnMessageHandlerAndReceiveMessages$$	0	3

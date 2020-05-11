@@ -170,3 +170,12 @@ D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\runti
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
 D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\StackExchange.Redis.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.Azure.Amqp.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.Azure.ServiceBus.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.Azure.Services.AppAuthentication.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Project\BusinessStandard\BusinessStandard.Api\bin\Release\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

@@ -190,7 +190,7 @@ namespace BusinessStandard.Api.Controllers
 
         [HttpPost]
         [Route("Sender")]
-        public async void Sender(string messageBody)
+        public async Task Sender(string messageBody)
         {
             var message = new Message(Encoding.UTF8.GetBytes(messageBody));
             TopicClient = new TopicClient(connectionStringSender, TopicName);
