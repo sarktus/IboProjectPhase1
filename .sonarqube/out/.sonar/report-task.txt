@@ -2,5 +2,5 @@ projectKey=IboEFProject
 serverUrl=http://localhost:9000
 serverVersion=8.2.0.32929
 dashboardUrl=http://localhost:9000/dashboard?id=IboEFProject
-ceTaskId=AXH5Tg60KAyl9rDNBoOA
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXH5Tg60KAyl9rDNBoOA
+ceTaskId=AXH_971kKAyl9rDNBoOC
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXH_971kKAyl9rDNBoOC

@@ -10,6 +10,9 @@ using BusinessStandard.Domain.Models.ViewModel;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
+using Microsoft.Azure.ServiceBus;
+using System.Text;
+using System.Threading;
 
 namespace BusinessStandard.Api.Controllers
 {
@@ -20,7 +23,11 @@ namespace BusinessStandard.Api.Controllers
         private readonly BusinessServiceDbContext _context;
         private readonly ILogger<StudentsController> _logger;
         private readonly IDistributedCache _cache;
-
+        static ITopicClient TopicClient;
+        static ISubscriptionClient SubscriptionClient;
+        string connectionStringSender = "Endpoint=sb://ibobusinessbusservice.servicebus.windows.net/;SharedAccessKeyName=UserSend;SharedAccessKey=0JAxa2o5hn72QnSCDqMe+ZJV2Fmk/i3Qkej54ago+d4=";
+        string TopicName = "ibobusinessbusservicetopic";
+       
         public StudentsController(BusinessServiceDbContext context, ILogger<StudentsController> logger,IDistributedCache cache)
         {
             _context = context;
@@ -106,7 +113,7 @@ namespace BusinessStandard.Api.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutStudents(int id, Students students)
         {
-            students.Id = id;
+            //students.Id = id;
             if (id != students.Id)
             {
                 return BadRequest();
@@ -120,7 +127,7 @@ namespace BusinessStandard.Api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, ex.Message);
+                _logger.LogError("Testex", ex.Message);
                 if (!StudentsExists(id))
                 {
                     return NotFound();
@@ -178,6 +185,17 @@ namespace BusinessStandard.Api.Controllers
         private bool StudentsExists(int id)
         {
             return _context.Students.Any(e => e.Id == id);
+        }
+
+
+        [HttpPost]
+        [Route("Sender")]
+        public async void Sender(string messageBody)
+        {
+            var message = new Message(Encoding.UTF8.GetBytes(messageBody));
+            TopicClient = new TopicClient(connectionStringSender, TopicName);
+
+            await TopicClient.SendAsync(message);
         }
     }
 }

@@ -125,7 +125,25 @@ _D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505134656_Azu
 ²² 
 
 ²²3 4
-²²8 9N
+²²8 9´
+bD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509135803_AzureReadyUpdateNew.cs
+
+ ,
+
+  "
+4 D		 
+
+  $
+6 F »
+iD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509140029_AzureReadyUpdateNewDeleted.cs
+
+ 3
+
+  "
+4 D		 
+
+  $
+6 F N
 @D:\Project\BusinessStandard\BusinessStandard.Data\UnityOfWork.cs
 
 

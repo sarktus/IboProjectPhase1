@@ -11,7 +11,11 @@ eD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200504144630_Vie
 YD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505060953_AzureReady.csutf-8m
 bD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505060953_AzureReady.Designer.csutf-8h
 _D:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505134656_AzureReadyUpdate.csutf-8s
-hD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505134656_AzureReadyUpdate.Designer.csutf-8p
+hD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200505134656_AzureReadyUpdate.Designer.csutf-8k
+bD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509135803_AzureReadyUpdateNew.csutf-8v
+kD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509135803_AzureReadyUpdateNew.Designer.csutf-8r
+iD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509140029_AzureReadyUpdateNewDeleted.csutf-8}
+rD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\20200509140029_AzureReadyUpdateNewDeleted.Designer.csutf-8p
 eD:\Project\BusinessStandard\BusinessStandard.Data\Migrations\BusinessServiceDbContextModelSnapshot.csutf-8I
 @D:\Project\BusinessStandard\BusinessStandard.Data\UnityOfWork.csutf-8g
 \C:\Users\cognizantdotnet28\AppData\Local\Temp\.NETCoreApp,Version=v3.1.AssemblyAttributes.csutf-8z
