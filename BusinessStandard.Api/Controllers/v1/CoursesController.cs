@@ -8,52 +8,53 @@ using Microsoft.EntityFrameworkCore;
 using BusinessStandard.Data;
 using BusinessStandard.Domain.Models;
 
-namespace BusinessStandard.Api.Controllers
+namespace BusinessStandard.Api.Controllers.v1
 {
     [Route("api/[controller]")]
+    [ApiExplorerSettings(GroupName = "v1")]
     [ApiController]
-    public class SchoolsController : ControllerBase
+    public class CoursesController : ControllerBase
     {
         private readonly BusinessServiceDbContext _context;
 
-        public SchoolsController(BusinessServiceDbContext context)
+        public CoursesController(BusinessServiceDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Schools
+        // GET: api/Courses
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Schools>>> GetSchools()
+        public async Task<ActionResult<IEnumerable<Courses>>> GetCourses()
         {
-            return await _context.Schools.ToListAsync();
+            return await _context.Courses.ToListAsync();
         }
 
-        // GET: api/Schools/5
+        // GET: api/Courses/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Schools>> GetSchools(int id)
+        public async Task<ActionResult<Courses>> GetCourses(int id)
         {
-            var schools = await _context.Schools.FindAsync(id);
+            var courses = await _context.Courses.FindAsync(id);
 
-            if (schools == null)
+            if (courses == null)
             {
                 return NotFound();
             }
 
-            return schools;
+            return courses;
         }
 
-        // PUT: api/Schools/5
+        // PUT: api/Courses/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutSchools(int id, Schools schools)
+        public async Task<IActionResult> PutCourses(int id, Courses courses)
         {
-            if (id != schools.SchoolId)
+            if (id != courses.CourseID)
             {
                 return BadRequest();
             }
 
-            _context.Entry(schools).State = EntityState.Modified;
+            _context.Entry(courses).State = EntityState.Modified;
 
             try
             {
@@ -61,7 +62,7 @@ namespace BusinessStandard.Api.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!SchoolsExists(id))
+                if (!CoursesExists(id))
                 {
                     return NotFound();
                 }
@@ -74,37 +75,37 @@ namespace BusinessStandard.Api.Controllers
             return NoContent();
         }
 
-        // POST: api/Schools
+        // POST: api/Courses
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Schools>> PostSchools(Schools schools)
+        public async Task<ActionResult<Courses>> PostCourses(Courses courses)
         {
-            _context.Schools.Add(schools);
+            _context.Courses.Add(courses);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetSchools", new { id = schools.SchoolId }, schools);
+            return CreatedAtAction("GetCourses", new { id = courses.CourseID }, courses);
         }
 
-        // DELETE: api/Schools/5
+        // DELETE: api/Courses/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Schools>> DeleteSchools(int id)
+        public async Task<ActionResult<Courses>> DeleteCourses(int id)
         {
-            var schools = await _context.Schools.FindAsync(id);
-            if (schools == null)
+            var courses = await _context.Courses.FindAsync(id);
+            if (courses == null)
             {
                 return NotFound();
             }
 
-            _context.Schools.Remove(schools);
+            _context.Courses.Remove(courses);
             await _context.SaveChangesAsync();
 
-            return schools;
+            return courses;
         }
 
-        private bool SchoolsExists(int id)
+        private bool CoursesExists(int id)
         {
-            return _context.Schools.Any(e => e.SchoolId == id);
+            return _context.Courses.Any(e => e.CourseID == id);
         }
     }
 }

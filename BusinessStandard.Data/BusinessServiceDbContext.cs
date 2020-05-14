@@ -21,7 +21,9 @@ namespace BusinessStandard.Data
         public DbSet<Courses> Courses { get; set; }
         public DbSet<Grades> Grades { get; set; }
         public DbSet<Schools> Schools { get; set; }
-        
+        public DbSet<UserMaster> Users { get; set; }
+        public DbSet<UserRoleMapping> UserRoleMapping { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

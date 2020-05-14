@@ -1,5 +1,5 @@
 using BusinessStandard.Api;
-using BusinessStandard.Api.Controllers;
+using BusinessStandard.Api.Controllers.v1;
 using BusinessStandard.Data;
 using BusinessStandard.Domain.Models;
 using Microsoft.AspNetCore.Hosting;

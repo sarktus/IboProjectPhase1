@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BusinessStandard.Data;
 using Microsoft.EntityFrameworkCore;
+using BusinessStandard.Api.Resources;
 
 namespace BusinessStandard.Api
 {
@@ -41,7 +42,21 @@ namespace BusinessStandard.Api
                         Email = "tstusharsarkar18@gmail.com",
                     }
                 });
+                c.SwaggerDoc("v2", new Info
+                {
+                    Version = "v2",
+                    Title = "My First API",
+                    Description = "My First ASP.NET Core 2.0 Web API",
+                    TermsOfService = "None",
+                    Contact = new Contact()
+                    {
+                        Name = "Tushar Sarkar",
+                        Email = "tstusharsarkar18@gmail.com",
+                    }
+                });
             });
+
+            services.AddMvc(x => x.Conventions.Add(new ApiExplorerVersionConvention()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,6 +80,7 @@ namespace BusinessStandard.Api
             app.UseSwagger();
             app.UseSwaggerUI(c => {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/swagger/v2/swagger.json", "My API V2");
             });
         }
     }

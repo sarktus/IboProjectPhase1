@@ -8,52 +8,53 @@ using Microsoft.EntityFrameworkCore;
 using BusinessStandard.Data;
 using BusinessStandard.Domain.Models;
 
-namespace BusinessStandard.Api.Controllers
+namespace BusinessStandard.Api.Controllers.v1
 {
     [Route("api/[controller]")]
+    [ApiExplorerSettings(GroupName = "v1")]
     [ApiController]
-    public class CoursesController : ControllerBase
+    public class ProgramGroupsController : ControllerBase
     {
         private readonly BusinessServiceDbContext _context;
 
-        public CoursesController(BusinessServiceDbContext context)
+        public ProgramGroupsController(BusinessServiceDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Courses
+        // GET: api/ProgramGroups
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Courses>>> GetCourses()
+        public async Task<ActionResult<IEnumerable<ProgramGroups>>> GetProgramGroups()
         {
-            return await _context.Courses.ToListAsync();
+            return await _context.ProgramGroups.ToListAsync();
         }
 
-        // GET: api/Courses/5
+        // GET: api/ProgramGroups/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Courses>> GetCourses(int id)
+        public async Task<ActionResult<ProgramGroups>> GetProgramGroups(int id)
         {
-            var courses = await _context.Courses.FindAsync(id);
+            var programGroups = await _context.ProgramGroups.FindAsync(id);
 
-            if (courses == null)
+            if (programGroups == null)
             {
                 return NotFound();
             }
 
-            return courses;
+            return programGroups;
         }
 
-        // PUT: api/Courses/5
+        // PUT: api/ProgramGroups/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCourses(int id, Courses courses)
+        public async Task<IActionResult> PutProgramGroups(int id, ProgramGroups programGroups)
         {
-            if (id != courses.CourseID)
+            if (id != programGroups.BoardID)
             {
                 return BadRequest();
             }
 
-            _context.Entry(courses).State = EntityState.Modified;
+            _context.Entry(programGroups).State = EntityState.Modified;
 
             try
             {
@@ -61,7 +62,7 @@ namespace BusinessStandard.Api.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CoursesExists(id))
+                if (!ProgramGroupsExists(id))
                 {
                     return NotFound();
                 }
@@ -74,37 +75,37 @@ namespace BusinessStandard.Api.Controllers
             return NoContent();
         }
 
-        // POST: api/Courses
+        // POST: api/ProgramGroups
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Courses>> PostCourses(Courses courses)
+        public async Task<ActionResult<ProgramGroups>> PostProgramGroups(ProgramGroups programGroups)
         {
-            _context.Courses.Add(courses);
+            _context.ProgramGroups.Add(programGroups);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCourses", new { id = courses.CourseID }, courses);
+            return CreatedAtAction("GetProgramGroups", new { id = programGroups.BoardID }, programGroups);
         }
 
-        // DELETE: api/Courses/5
+        // DELETE: api/ProgramGroups/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Courses>> DeleteCourses(int id)
+        public async Task<ActionResult<ProgramGroups>> DeleteProgramGroups(int id)
         {
-            var courses = await _context.Courses.FindAsync(id);
-            if (courses == null)
+            var programGroups = await _context.ProgramGroups.FindAsync(id);
+            if (programGroups == null)
             {
                 return NotFound();
             }
 
-            _context.Courses.Remove(courses);
+            _context.ProgramGroups.Remove(programGroups);
             await _context.SaveChangesAsync();
 
-            return courses;
+            return programGroups;
         }
 
-        private bool CoursesExists(int id)
+        private bool ProgramGroupsExists(int id)
         {
-            return _context.Courses.Any(e => e.CourseID == id);
+            return _context.ProgramGroups.Any(e => e.BoardID == id);
         }
     }
 }

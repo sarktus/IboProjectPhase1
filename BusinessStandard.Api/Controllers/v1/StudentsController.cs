@@ -13,10 +13,13 @@ using Newtonsoft.Json;
 using Microsoft.Azure.ServiceBus;
 using System.Text;
 using System.Threading;
+using BusinessStandard.Api.Filters;
 
-namespace BusinessStandard.Api.Controllers
+namespace BusinessStandard.Api.Controllers.v1
 {
     [Route("api/[controller]")]
+    [ApiExplorerSettings(GroupName = "v1")]
+    [CustomAuthorization]
     [ApiController]
     public class StudentsController : ControllerBase
     {

@@ -1,11 +1,11 @@
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\AssignmentPeriodsController.cs
-GetAssignmentPeriod 3
+GetAssignmentPeriod 15
 GetAssignmentPeriod -1
 GetAssignmentPeriod 3
 GetAssignmentPeriod -1
-PutAssignmentPeriod 3
+PutAssignmentPeriod 4
 PutAssignmentPeriod -1
-PostAssignmentPeriod 4
+PostAssignmentPeriod 5
 PostAssignmentPeriod -1
 DeleteAssignmentPeriod 4
 DeleteAssignmentPeriod -1
@@ -13,7 +13,7 @@ AssignmentPeriodExists 4
 AssignmentPeriodExists -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\AzureFunctionInvockController.cs
-Get 3
+Get 4
 Get -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\BlobImplementationController.cs
@@ -21,101 +21,101 @@ upload 5
 upload -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\CoursesController.cs
-GetCourses 32
+GetCourses 4
 GetCourses -1
 GetCourses 4
 GetCourses -1
 PutCourses 4
 PutCourses -1
-PostCourses 4
+PostCourses 6
 PostCourses -1
-DeleteCourses 4
+DeleteCourses 3
 DeleteCourses -1
-CoursesExists 3
+CoursesExists 5
 CoursesExists -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\GradesController.cs
-GetGrades 14
+GetGrades 4
 GetGrades -1
 GetGrades 3
 GetGrades -1
-PutGrades 4
+PutGrades 3
 PutGrades -1
 PostGrades 3
 PostGrades -1
 DeleteGrades 3
 DeleteGrades -1
-GradesExists 3
+GradesExists 4
 GradesExists -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\ProgramGroupsController.cs
 GetProgramGroups 4
 GetProgramGroups -1
-GetProgramGroups 4
+GetProgramGroups 3
 GetProgramGroups -1
-PutProgramGroups 16
+PutProgramGroups 3
 PutProgramGroups -1
-PostProgramGroups 8
+PostProgramGroups 5
 PostProgramGroups -1
-DeleteProgramGroups 5
+DeleteProgramGroups 4
 DeleteProgramGroups -1
-ProgramGroupsExists 6
+ProgramGroupsExists 3
 ProgramGroupsExists -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\SchoolsController.cs
 GetSchools 4
 GetSchools -1
-GetSchools 3
+GetSchools 5
 GetSchools -1
-PutSchools 3
+PutSchools 6
 PutSchools -1
 PostSchools 4
 PostSchools -1
-DeleteSchools 6
+DeleteSchools 4
 DeleteSchools -1
-SchoolsExists 5
+SchoolsExists 4
 SchoolsExists -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Controllers\StudentsController.cs
-GetStudents 4
+GetStudents 9
 GetStudents -1
-GetAllStudents 4
+GetAllStudents 3
 GetAllStudents -1
 GetStudents 3
 GetStudents -1
-PutStudents 6
+PutStudents 7
 PutStudents -1
-PostStudents 4
+PostStudents 3
 PostStudents -1
 DeleteStudents 3
 DeleteStudents -1
-StudentsExists 4
+StudentsExists 5
 StudentsExists -1
-Sender 4
+Sender 3
 Sender -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Program.cs
-Main 5
+Main 7
 Main -1
-CreateHostBuilder 4
+CreateHostBuilder 3
 CreateHostBuilder -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Resources\AzureFunctionInvokeHelper.cs
-InvokeFunction 5
+InvokeFunction 4
 InvokeFunction -1
 SerializeJsonIntoStream 3
 SerializeJsonIntoStream -1
-CreateHttpContent 6
+CreateHttpContent 11
 CreateHttpContent -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Resources\BlobStorageService.cs
 UploadFileToBlob 4
 UploadFileToBlob -1
-DeleteBlobData 8
+DeleteBlobData 4
 DeleteBlobData -1
-GenerateFileName 6
+GenerateFileName 8
 GenerateFileName -1
-UploadFileToBlobAsync 6
+UploadFileToBlobAsync 3
 UploadFileToBlobAsync -1
 
 D:\Project\BusinessStandard\BusinessStandard.Api\Resources\Contact.cs

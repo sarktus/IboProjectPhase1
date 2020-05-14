@@ -7,9 +7,10 @@ using BusinessStandard.Api.Resources;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BusinessStandard.Api.Controllers
+namespace BusinessStandard.Api.Controllers.v2
 {
     [Route("api/[controller]")]
+    [ApiExplorerSettings(GroupName = "v2")]
     [ApiController]
     public class BlobImplementationController : ControllerBase
     {

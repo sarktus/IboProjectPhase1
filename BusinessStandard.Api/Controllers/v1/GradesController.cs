@@ -8,9 +8,10 @@ using Microsoft.EntityFrameworkCore;
 using BusinessStandard.Data;
 using BusinessStandard.Domain.Models;
 
-namespace BusinessStandard.Api.Controllers
+namespace BusinessStandard.Api.Controllers.v1
 {
     [Route("api/[controller]")]
+    [ApiExplorerSettings(GroupName = "v1")]
     [ApiController]
     public class GradesController : ControllerBase
     {

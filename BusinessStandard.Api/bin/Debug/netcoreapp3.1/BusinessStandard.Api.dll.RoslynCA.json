@@ -285,6 +285,27 @@
           }
         },
         {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Program.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 18,
+                  "endLine": 12,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S1128",
           "level": "warning",
           "message": "Remove this unnecessary 'using'.",
@@ -642,48 +663,6 @@
           }
         },
         {
-          "ruleId": "S1118",
-          "level": "warning",
-          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Program.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 18,
-                  "endLine": 12,
-                  "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'AzureFuntionUrl' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Resources/AzureFunctionInvokeHelper.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 24,
-                  "endLine": 14,
-                  "endColumn": 39
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S2933",
           "level": "warning",
           "message": "Make 'accessKey' 'readonly'.",
@@ -726,18 +705,18 @@
           }
         },
         {
-          "ruleId": "S1144",
+          "ruleId": "S2933",
           "level": "warning",
-          "message": "Remove the unused private field 'SubscriptionClient'.",
+          "message": "Make 'AzureFuntionUrl' 'readonly'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Resources/AzureFunctionInvokeHelper.cs",
                 "region": {
-                  "startLine": 27,
-                  "startColumn": 9,
-                  "endLine": 27,
-                  "endColumn": 55
+                  "startLine": 14,
+                  "startColumn": 24,
+                  "endLine": 14,
+                  "endColumn": 39
                 }
               }
             }
@@ -789,18 +768,18 @@
           }
         },
         {
-          "ruleId": "S1854",
+          "ruleId": "S1144",
           "level": "warning",
-          "message": "Remove this useless assignment to local variable 'listStudent'.",
+          "message": "Remove the unused private field 'SubscriptionClient'.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
                 "region": {
-                  "startLine": 47,
-                  "startColumn": 40,
-                  "endLine": 47,
-                  "endColumn": 62
+                  "startLine": 27,
+                  "startColumn": 9,
+                  "endLine": 27,
+                  "endColumn": 55
                 }
               }
             }
@@ -868,18 +847,39 @@
           }
         },
         {
-          "ruleId": "S4507",
+          "ruleId": "S4823",
           "level": "warning",
-          "message": "Make sure this debug feature is deactivated before delivering the code in production.",
+          "message": "Make sure that command line arguments are used safely here.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Startup.cs",
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Program.cs",
                 "region": {
-                  "startLine": 52,
-                  "startColumn": 17,
-                  "endLine": 52,
-                  "endColumn": 48
+                  "startLine": 14,
+                  "startColumn": 28,
+                  "endLine": 14,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1854",
+          "level": "warning",
+          "message": "Remove this useless assignment to local variable 'listStudent'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Controllers/StudentsController.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 40,
+                  "endLine": 47,
+                  "endColumn": 62
                 }
               }
             }
@@ -910,18 +910,18 @@
           }
         },
         {
-          "ruleId": "S4823",
+          "ruleId": "S4507",
           "level": "warning",
-          "message": "Make sure that command line arguments are used safely here.",
+          "message": "Make sure this debug feature is deactivated before delivering the code in production.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Program.cs",
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Startup.cs",
                 "region": {
-                  "startLine": 14,
-                  "startColumn": 28,
-                  "endLine": 14,
-                  "endColumn": 32
+                  "startLine": 52,
+                  "startColumn": 17,
+                  "endLine": 52,
+                  "endColumn": 48
                 }
               }
             }
@@ -943,6 +943,27 @@
                   "startColumn": 89,
                   "endLine": 49,
                   "endColumn": 92
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3445",
+          "level": "warning",
+          "message": "Consider using 'throw;' to preserve the stack trace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Resources/BlobStorageService.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 17,
+                  "endLine": 93,
+                  "endColumn": 28
                 }
               }
             }
@@ -977,27 +998,6 @@
                   "startColumn": 29,
                   "endLine": 26,
                   "endColumn": 40
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3445",
-          "level": "warning",
-          "message": "Consider using 'throw;' to preserve the stack trace.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///D:/Project/BusinessStandard/BusinessStandard.Api/Resources/BlobStorageService.cs",
-                "region": {
-                  "startLine": 93,
-                  "startColumn": 17,
-                  "endLine": 93,
-                  "endColumn": 28
                 }
               }
             }

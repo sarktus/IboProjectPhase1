@@ -8,9 +8,10 @@ using Microsoft.EntityFrameworkCore;
 using BusinessStandard.Data;
 using BusinessStandard.Domain.Models;
 
-namespace BusinessStandard.Api.Controllers
+namespace BusinessStandard.Api.Controllers.v2
 {
     [Route("api/[controller]")]
+    [ApiExplorerSettings(GroupName = "v2")]
     [ApiController]
     public class AssignmentPeriodsController : ControllerBase
     {

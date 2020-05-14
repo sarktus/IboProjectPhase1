@@ -3,9 +3,10 @@ using BusinessStandard.Api.Resources;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
-namespace BusinessStandard.Api.Controllers
+namespace BusinessStandard.Api.Controllers.v2
 {
     [Route("api/[controller]")]
+    [ApiExplorerSettings(GroupName = "v2")]
     [ApiController]
     public class AzureFunctionInvockController : ControllerBase
     {
